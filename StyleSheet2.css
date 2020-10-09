@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    /* Default page text properties */
+    font-size: 18px;
+    color: white;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #292223;
+    width: 100px;
+    display: block;
+    padding: 15px;
+    font-size: 17px;
+    margin: 10px;
+}
+
+li a:hover {
+	background-color:antiquewhite;
+}
+
+.nav ul {
+	list-style-type: none;
+	text-align: center;
+	background-color: #5D737E;
+	padding: 0;
+	margin: 0;
+}
+
+.nav li {
+	display: inline-block;
+	color: #292223;
+}
+
+
+
+.sectionHeader {
+	font-size: 20px;
+	font-weight: 400;
+	text-decoration: underline;
+	text-align: center;
+	margin-top: 60px;
+}
+
+/* The container class is used to wrap elements and display them using the entire
+               width of the screen.*/
+.container {
+	width: 100%;
+	margin-top: 60px;
+}
+
+img {
+	width: 100%;
+	margin: 1%;
+	margin-bottom: 8px;
+	box-shadow: black 0px 0px 5px;
+	box-sizing: border-box;
+}
+
+
+/* Styling for the virtual page sections */
+.section {
+	box-sizing: border-box;
+	padding: 20px;
+	color: #5D737E;
+	background-color: #FCFFFD;
+	text-align: center;
+	position: relative;
+	top: -50px;
+	margin-top: 60px;
+}
+
+.sectionImg {
+	width: 100%;
+	height: auto;
+	border-radius: 16px;
+	border: 2px solid gray;
+	margin: 2px;
+	margin-top: 60px;
+}
+
+#benefitsImg {
+	width: 80%;
+	height: 50%;
+	margin: 2px;
+	border-radius: 16px;
+	border: 2px solid black;
+}
+
+	#benefitsImg img {
+		width: 30%;
+	}
+
+#mainSection {
+	text-align: right;
+}
+
+#benefitsSection {
+	background-color: #AFC9BE;
+	color: black;
+}
+
+#Lab-Title {
+	font-family: Courier New, Courier, monospace;
+	font-size: 12px;
+	text-decoration: underline;
+	top: -40px;
+	text-align: center;
+}
+
+#content {
+	margin: auto;
+	padding: 10px;
+	width: 100%;
+	font-size: 15px;
+	text-align: center;
+	font-family: Courier New, Courier, monospace;
+}
+
+#recipesSection {
+	background-color: #FCFFFD;
+	color: black;
+}
+
+h3 {
+	text-align: center;
+	top: -50px;
+	font-size: 10px;
+}
+
+.recipescontainer {
+	position: relative;
+	width: 1280px;
+	margin: 70px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	top: 50px;
+	margin-top: 60px;
+}
+
+    .recipescontainer .box {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        background: #FCFFFD;
+        margin: 10px;
+        margin-top: 0;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+		.recipescontainer .box .imgBox {
+			position: relative;
+			overflow: hidden;
+		}
+
+			.recipescontainer .box .imgBox img {
+				max-width: 100%;
+				height: 300px;
+				transition: transform 2s;
+			}
+
+		.recipescontainer .box:hover .imgBox img {
+			transform: scale(1.2);
+		}
+
+		.recipescontainer .box .details {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			bottom: 10px;
+			right: 10px;
+			background: rgba(0,0,0, .8);
+			transform: scaleY(0);
+			transition: transform .5s;
+		}
+
+		.recipescontainer .box:hover .details {
+			transform: scaleY(1);
+		}
+
+		.recipescontainer .box .details .content-index p {
+			margin: 10px 0 0;
+			padding: 0;
+			color: white;
+			text-align: center;
+		}
+
+#formSection {
+	background-color: #AFC9BE;
+	color: black;
+	position: relative;
+	top: 20px;
+	height: auto;
+}
+
+
+
+footer {
+	text-align: center;
+	background-color: #5D737E;
+	padding: 3px;
+	height: auto;
+}
+
+/* DESKTOP - Styling for larger screens */
+@media screen and (min-width: 600px) {
+
+	.container {
+		margin: auto; /* centers container on page*/
+		max-width: 1000px;
+		position: relative;
+	}
+
+	.leftside {
+		float: right;
+		width: 49%;
+		margin-right: 1%;
+		text-align: left;
+		line-height: 200%;
+	}
+
+	.rightside {
+		float: left;
+		width: 49%;
+		/*margin-left: 1%;*/
+	}
+
+	.clear {
+		clear: both;
+	}
+	.center {
+		
+		margin-left: auto;
+		margin-right: auto;
+        width:30%;
+        
+		
+	}
+
+}
+
+
+/* Spread images equally accross the page */
